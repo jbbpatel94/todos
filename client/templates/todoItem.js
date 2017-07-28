@@ -6,5 +6,11 @@ Template.todoItem.events({
 		if(confirm){
 			Todos.remove({ _id: documentId });
 		}
+	},
+	'keyup [name=todoItem]': function(event){
+		event.preventDefault();
+		var documentId = this._id;
+		var todoItem = $(event.target).val();
+		Todos.update({ _id: documentId }, {$set: { name: todoItem }});
 	}
 });

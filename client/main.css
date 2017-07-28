@@ -1,1 +1,15 @@
-/* CSS declarations go here */
+[name=todoItem]{
+	border:none;
+	font-family: "Times New Roman";
+	font-size: 100%;
+	padding:0.15em;
+}
+input:hover {
+	background-color: #f9f9f9;
+	cursor:pointer;
+}
+input :focus{
+	background-color: #f9f9f9;
+	cursor:default;
+	outline:none;
+}
