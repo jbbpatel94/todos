@@ -1,5 +1,6 @@
 Template.lists.helpers({
     'list': function(){
-        return Lists.find({}, {sort: {name: 1}});
+        var currentUser = Meteor.userId();
+        return Lists.find({ createdBy: currentUser }, {sort: {name: 1}})
     }
 });
