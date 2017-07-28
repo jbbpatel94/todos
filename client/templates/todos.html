@@ -1,9 +1,7 @@
 <template name="todos">
 	<ul>
 		{{#each todo}}
-		<li>
-			{{name}}
-		</li>
+		{{>todoItem}}
 		{{/each}}
 	</ul>
 </template>
