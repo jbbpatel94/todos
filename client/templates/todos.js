@@ -1,5 +1,6 @@
 Template.todos.helpers({
-	todo : function(){
-		return Todos.find({},{sort: {createdAt: -1}});
-	}
+    'todo': function(){
+        var currentList = this._id;
+        return Todos.find({ listId: currentList }, {sort: {createdAt: -1}})
+    }
 });

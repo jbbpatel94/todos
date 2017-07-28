@@ -1,0 +1,9 @@
+<template name="lists">
+    <h2>Lists</h2>
+    {{> addList}}
+    <ul>
+        {{#each list}}
+            <li><a href="/list/{{_id}}">{{name}}</a></li>
+        {{/each}}
+    </ul>
+</template>
