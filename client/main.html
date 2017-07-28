@@ -1,6 +1,7 @@
-<head>
-    <title>Todos</title>
-</head>
-<body>
-{{>todos}}
-</body>
+<template name="main">
+    <h1>Todos</h1>
+    {{>navigation}}
+    {{> yield}}
+    <hr />
+    <p>Copyright &copy; Todos, 2014-2015.</p>
+</template>
